@@ -1,7 +1,7 @@
 a,
 :link,
 .link {
-  --link-color: var(--primary-color);
+  --link-color: var(--text-color);
 
   color: var(--link-color);
   text-decoration: none;
@@ -12,10 +12,4 @@ a:hover,
 :link:hover,
 .link:hover {
   --link-color: var(--primary-light-color);
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
 }

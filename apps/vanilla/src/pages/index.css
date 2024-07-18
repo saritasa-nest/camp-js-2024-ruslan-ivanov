@@ -9,35 +9,26 @@
 
 	margin: auto;
 	max-width: var(--default-page-width);
+	display: grid;
+  gap: 24px;
 }
 
-header {
+.header {
 	--header-height: 64px;
 
-	padding: auto;
 	max-height: var(--header-height);
 	border-bottom: 1px solid var(--border-color);
 }
 
-main {
-	margin: 24px 0px;
-	border: 1px solid red; /* Just for visual simplify, will remove it further. */
+.main {
 }
 
-footer {
-	--footer-height: 112px;
+.footer {
+	--footer-height: 128px;
 
-	padding-top: 16px;
 	height: var(--footer-height);
 	max-height: var(--footer-height);
-	border: 1px solid green; /* Same border at main */
-}
-
-.footer--stick-right {
-	position: absolute;
-	right: 0px;
-}
-
-.footer--go-to-top {
-	border: none;
+	display: flex;
+  justify-content: space-between;
+	border-top: 1px solid var(--border-color);
 }

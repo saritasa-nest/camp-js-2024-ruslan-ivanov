@@ -5,11 +5,14 @@ a,
 
   color: var(--link-color);
   text-decoration: none;
-  border-bottom: 1px solid var(--link-color);
 }
 
 a:hover,
 :link:hover,
 .link:hover {
-  --link-color: var(--primary-light-color);
+  --link-color: var(--primary-color);
+}
+
+.link__underline_on {
+	border-bottom: 1px solid var(--link-color);
 }

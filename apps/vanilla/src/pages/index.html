@@ -15,43 +15,46 @@
 			<div class="main__filters col_3 col_s_12">
 				<label class="font-style_subtitle">filters</label>
 				<div class="main__filters-controls">
-					<input class="input">
-					<input class="input">
-					<input type="checkbox">
+					<input class="main__filters-control font-style_body" type="search" placeholder="e.g. “Refactoring”" name="search">
+					<select class="main__filters-control select font-style_body" required>
+						<option value="" disabled selected>Choose sort field</option>
+						<option>Year</option>
+						<option>Length</option>
+						<option>Name</option>
+						<option>Genre</option>
+					</select>
+					<label class="main__filters-checkbox-container font-style_body" autosize="disabled">Show comics
+						<input type="checkbox">
+						<span class=checkmark></span>
+					</label>
 				</div>
 			</div>
 			<div class="main__books col_9 col_s_12">
 				<div class="main__books-group">
 					<label class="font-style_subtitle">2020 year</label>
 					<div class="main__books-cards">
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
+
 					</div>
 				</div>
 				<div class="main__books-group">
 					<label class="font-style_subtitle">2021 year</label>
 					<div class="main__books-cards">
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
-						<div class="main__books-card"></div>
+
 					</div>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
-			<p>
-				<label class="font-style_logo">Books app&nbsp;&nbsp;</label>
-				<label class="font-style_body">$ 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<div class="footer__info">
+				<div>
+					<label class="font-style_logo">Books app</label>
+					<label class="font-style_body">&nbsp;$ 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				</div>
 				<a class="link link__underline_on font-style_body " href="">GitHub</a>
-			</p>
-			<p>
+			</div>
+			<div class="footer__go-to-top">
 				<a class="link font-style_body" href="">Go to top ↑</a>
-			</p>
+			</div>
 		</footer>
     <script type="module" src="./index.ts"></script>
   </body>

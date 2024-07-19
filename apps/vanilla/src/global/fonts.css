@@ -1,23 +1,23 @@
-.font_subtitle {
+.font-style_subtitle {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-.font_body {
+.font-style_body {
 	font-size: 20px;
 	line-height: 32px;
 	font-weight: 400;
 }
 
-.font_body-small {
+.font-style_body-small {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 500;
 }
 
-.font_logo {
+.font-style_logo {
 	font-size: 20px;
 	line-height: 24px;
 	font-weight: 700;

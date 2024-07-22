@@ -51,7 +51,20 @@
 	min-width: var(--card-min-width);
 	max-width: var(--card-max-width);
 	height: var(--card-height);
-	background-color: aqua;
+	background-color: var(--input-background-color);
+}
+
+.main__books-card img {
+	--card-image-height: 250px;
+	height: var(--card-image-height);
+	border: 1px solid var(--border-color);
+	border-radius: 24px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.main__books-card-image::image {
+	background-image: url();
 }
 
 .main__filters {
@@ -95,7 +108,7 @@ input::placeholder {
 
 select {
 	appearance: none;
-  background-image: url('images/arrow-down.svg');
+  background-image: url('images/arrow-down-icon.svg');
   background-repeat: no-repeat;
   background-position: right 16px top 50%;
 }

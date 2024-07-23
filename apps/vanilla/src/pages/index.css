@@ -52,7 +52,7 @@
 	min-width: var(--card-min-width);
 	max-width: var(--card-max-width);
 	height: var(--card-height);
-	background-color: var(--input-background-color);
+	overflow: hidden;
 }
 
 .main__books-card img {

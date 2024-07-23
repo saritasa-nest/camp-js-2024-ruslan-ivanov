@@ -35,8 +35,18 @@
 }
 
 .main__books-group {
-	display: grid;
-	gap: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main__books-group-header {
+	display: block;
+	--group-header-height: 24px;
+	height: var(--group-header-height);
+	position: sticky;
+	padding: 0px 0px 48px 0px;
+	top: 0px;
+	background-color: var(--app-background-color);
 }
 
 .main__books-cards {
@@ -69,7 +79,7 @@
 }
 
 .main__filters {
-	display: grid;
+	display: flex;
 	flex-direction: column;
 	gap: 24px;
 }
@@ -214,6 +224,13 @@ option {
 @media only screen and (min-width: 768px) {
 	.main {
 		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+
+	.main__filters {
+		position: sticky;
+    top: 0px;
+    background-color: var(--app-background-color);
 	}
 
 	.main__filters-controls {

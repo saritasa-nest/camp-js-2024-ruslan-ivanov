@@ -1,16 +1,12 @@
-a,
-:link,
 .link {
   --link-color: var(--text-color);
-
   color: var(--link-color);
   text-decoration: none;
 }
 
-a:hover,
-:link:hover,
 .link:hover {
   --link-color: var(--primary-color);
+	color: var(--link-color);
 }
 
 .link__underline_on {

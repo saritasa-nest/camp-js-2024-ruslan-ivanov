@@ -1,24 +1,30 @@
+html {
+  font-family: 'Inter';
+}
+
+[class*="font-style_"] {
+  color: var(--text-color);
+	line-height: 24px;
+}
+
 .font-style_subtitle {
 	font-size: 18px;
-	line-height: 24px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .font-style_body {
-	font-size: 20px;
 	line-height: 32px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
 .font-style_body-small {
 	font-size: 16px;
-	line-height: 24px;
 	font-weight: 500;
 }
 
 .font-style_logo {
 	font-size: 20px;
-	line-height: 24px;
 	font-weight: 700;
 }

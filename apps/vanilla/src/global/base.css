@@ -11,7 +11,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 689px) {
   /* For tablets: */
   .col_s_1 {width: 8.33%;}
   .col_s_2 {width: 16.66%;}
@@ -27,7 +27,7 @@ html {
   .col_s_12 {width: 100%;}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 926px) {
   /* For desktop: */
   .col_1 {width: 8.33%;}
   .col_2 {width: 16.66%;}

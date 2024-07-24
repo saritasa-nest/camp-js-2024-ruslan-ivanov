@@ -201,7 +201,7 @@ option {
 	justify-content: flex-end;
 }
 
-@media only screen and (min-width: 493px) {
+@media only screen and (min-width: 689px) {
 	.main__filters-controls {
 		flex-direction: row;
 		gap: 32px;
@@ -221,7 +221,7 @@ option {
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 926px) {
 	.main {
 		flex-direction: row-reverse;
 		align-items: flex-start;

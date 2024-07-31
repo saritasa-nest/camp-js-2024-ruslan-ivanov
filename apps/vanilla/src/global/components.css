@@ -14,3 +14,80 @@
 .link__underline_on {
   border-bottom: 1px solid var(--link-color);
 }
+
+input[type="search"] {
+  padding: 8px 8px 8px 48px;
+  background-image: url("images/search-icon.svg");
+  background-position: 16px 12px;
+  background-repeat: no-repeat;
+}
+
+input::placeholder {
+  color: var(--text-dim-color);
+}
+
+select {
+  padding: 8px 48px 8px 16px;
+  appearance: none;
+  background-image: url("images/arrow-down-icon.svg");
+  background-position: right 16px top 50%;
+  background-repeat: no-repeat;
+}
+
+select:invalid {
+  color: var(--text-dim-color);
+}
+
+select:valid {
+  color: var(--text-color);
+}
+
+option[value=""] {
+  display: none;
+}
+
+option {
+  color: var(--text-color);
+  background-color: var(--input-background-color);
+}
+
+.checkbox-container {
+  position: relative;
+  padding-left: 36px;
+  text-wrap: nowrap;
+}
+
+.checkbox-container input {
+  appearance: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container .checkmark::after {
+  left: 3px;
+  top: 3px;
+  border: 5px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  border-color: var(--primary-color);
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}

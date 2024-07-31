@@ -4,10 +4,10 @@ html {
 
 [class*="font-style_"] {
   color: var(--text-color);
-  line-height: 24px;
 }
 
 .font-style_subtitle {
+  line-height: 24px;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -20,11 +20,13 @@ html {
 }
 
 .font-style_body-small {
+  line-height: 24px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .font-style_logo {
+  line-height: 24px;
   font-size: 20px;
   font-weight: 700;
 }

@@ -1,7 +1,10 @@
 @import url("../global/index.css");
 
 :root {
-  --page-min-width: 360px;
+  --gap-s: 16px;
+  --gap-m: 24px;
+  --gap-l: 32px;
+  --gap-xl: 40px;
   --page-max-width: 1200px;
   --header-height: 64px;
   --filters-control-height: 48px;
@@ -14,12 +17,11 @@
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  gap: var(--gap-m);
   margin: auto;
-  padding: 0 24px;
-  min-width: var(--page-min-width);
+  padding: 0 var(--gap-m);
+  min-width: calc(var(--gap-m) * 2 + var(--gap-s) + var(--book-card-min-width) * 2);
   max-width: var(--page-max-width);
   background-color: var(--app-background-color);
 }
@@ -34,14 +36,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--gap-m);
   margin-top: -24px;
 }
 
 .books {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  gap: var(--gap-s);
+  width: 100%;
 }
 
 .books__header {
@@ -55,7 +57,7 @@
 
 .books__cards {
   display: grid;
-  gap: 16px;
+  gap: var(--gap-s);
   grid-template-columns: repeat(auto-fill, minmax(var(--book-card-min-width), 1fr));
   grid-auto-rows: var(--book-card-height);
 }
@@ -76,7 +78,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 24px;
-  gap: 24px;
+  gap: var(--gap-m);
 }
 
 .filters__controls {
@@ -84,7 +86,7 @@
   flex-direction: column;
   align-items: baseline;
   padding-bottom: 24px;
-  gap: 24px;
+  gap: var(--gap-m);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -99,7 +101,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--gap-xl);
   padding: 24px 0;
   height: var(--footer-height-large);
   border-top: 1px solid var(--border-color);
@@ -119,11 +121,11 @@
 @media only screen and (min-width: 689px) {
   .filters__controls {
     flex-direction: row;
-    gap: 32px;
+    gap: var(--gap-l);
   }
 
   .filters-control {
-    width: 50%;
+    width: 33%;
   }
 
   .footer {
@@ -147,7 +149,7 @@
 
   .filters__controls {
     flex-direction: column;
-    gap: 24px;
+    gap: var(--gap-m);
     padding-bottom: 0;
     border-bottom: none;
   }

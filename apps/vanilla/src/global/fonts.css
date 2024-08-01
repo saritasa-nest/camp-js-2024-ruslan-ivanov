@@ -1,0 +1,32 @@
+html {
+  font-family: Inter, sans-serif;
+}
+
+[class*="font-style_"] {
+  color: var(--text-color);
+}
+
+.font-style_subtitle {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.font-style_body {
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-style_body-small {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font-style_logo {
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+}

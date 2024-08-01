@@ -1,0 +1,8 @@
+:root {
+  --app-background-color: rgb(255 255 255);
+  --primary-color: rgb(241 91 36);
+  --border-color: rgb(0 0 0 / 15%);
+  --input-background-color: rgb(0 0 0 / 5%);
+  --text-color: rgb(0 0 0);
+  --text-dim-color: rgb(0 0 0 / 50%);
+}
